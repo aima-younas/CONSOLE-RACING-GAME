@@ -1,0 +1,32 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build SFML Game",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\game.exe",
+                "-IC:\\Users\\HF\\Downloads\\SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit (1)\\SFML-2.5.1\\include",
+                "-LC:\\Users\\HF\\Downloads\\SFML-2.5.1-windows-gcc-7.3.0-mingw-64-bit (1)\\SFML-2.5.1\\lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system",
+                "-lsfml-audio"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
